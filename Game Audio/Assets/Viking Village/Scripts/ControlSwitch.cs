@@ -14,7 +14,8 @@ public class ControlSwitch : MonoBehaviour {
 	{
 		Application.targetFrameRate = 60;
 		useAutomaticControl = HasCommandLineArgument (automaticControlDefaultCMDLineArgument);
-		SetControllerState (false);
+		SetControllerState(true);
+		Toggle();
 	}
 
 	void Update()
@@ -24,7 +25,7 @@ public class ControlSwitch : MonoBehaviour {
 		}
 	}
 
-	void Toggle()
+	public void Toggle()
 	{
 		useAutomaticControl = !useAutomaticControl;
 		SetControllerState(useAutomaticControl);
