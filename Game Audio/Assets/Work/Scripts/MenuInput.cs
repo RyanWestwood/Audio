@@ -9,7 +9,7 @@ public class MenuInput : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && menu.activeInHierarchy == false)
         {
             camera_script.Toggle();
             menu.SetActive(true);
