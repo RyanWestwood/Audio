@@ -24,6 +24,7 @@ public class SliderValues : MonoBehaviour
         volume = PlayerPrefs.GetFloat(keyname, 1);
         slider.value = volume;
         audio_bus = FMODUnity.RuntimeManager.GetBus("bus:/" + audio_bus_id);
+        UpdateSoundVolume();
     }
 
     public void SaveSliderValue(System.Single value)
