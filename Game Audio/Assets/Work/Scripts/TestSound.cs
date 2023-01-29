@@ -8,7 +8,7 @@ public class TestSound : MonoBehaviour
 
     void Start()
     {
-        test_sound = FMODUnity.RuntimeManager.CreateInstance("event:/Test");
+        test_sound = FMODUnity.RuntimeManager.CreateInstance("event:/Test Audio/number");
         test_sound.setParameterByName("Parameter 1", 1.0f);
     }
 
