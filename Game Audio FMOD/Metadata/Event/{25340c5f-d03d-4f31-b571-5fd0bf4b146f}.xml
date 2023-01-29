@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{25340c5f-d03d-4f31-b571-5fd0bf4b146f}">
 		<property name="name">
-			<value>Test</value>
+			<value>number</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
 		</property>
 		<relationship name="folder">
-			<destination>{59ebdec8-aff5-4e35-b5dd-dbc8844f3d3e}</destination>
+			<destination>{fffa5b0f-544d-4c8b-bab3-914400c2f7bd}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{de319b1e-f0c6-4931-af17-0881330af64f}</destination>
@@ -32,7 +32,7 @@
 			<destination>{3e9f6ec6-29da-4fe7-8011-2633d888c771}</destination>
 		</relationship>
 		<relationship name="banks">
-			<destination>{2b677b97-3a04-457b-b4a4-30c88dedbbd0}</destination>
+			<destination>{87e9d1f2-dd49-4ece-9beb-91f243efcc1e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{de319b1e-f0c6-4931-af17-0881330af64f}">
@@ -100,6 +100,9 @@
 	</object>
 	<object class="MixerBusPanner" id="{b4eee123-09fe-484d-bf30-10958c213c07}" />
 	<object class="MultiSound" id="{4202134c-a237-45f1-88ea-80da057a04c8}">
+		<property name="length">
+			<value>0.33000000000000002</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{8fddeb2f-fd6d-4fdd-8a04-3ab23b2602e0}</destination>
 			<destination>{d5156ee4-c477-456a-bb91-efe4196e6eba}</destination>

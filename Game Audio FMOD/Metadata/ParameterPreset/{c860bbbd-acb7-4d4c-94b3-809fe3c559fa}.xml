@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="ParameterPreset" id="{c860bbbd-acb7-4d4c-94b3-809fe3c559fa}">
 		<property name="name">
-			<value>Parameter 1</value>
+			<value>Pitch</value>
 		</property>
 		<relationship name="folder">
 			<destination>{762e0399-50cd-42da-9836-dc08e11ba477}</destination>
@@ -13,7 +13,7 @@
 	</object>
 	<object class="GameParameter" id="{f52de597-ed27-4b29-beab-61ca49dc1137}">
 		<property name="initialValue">
-			<value>0</value>
+			<value>1</value>
 		</property>
 	</object>
 </objects>
