@@ -31,7 +31,7 @@ By following these steps, you will be able to push and pull changes to and from 
 
 ## Opening the project
 * Open unity hub  
-* Click on the "Projects" tab
+* Click on the "Projects" tab  
 **First time only**
   * Click open and select `../Audio/Game Audio`
   * Make sure editor version is `2021.3.4f1`

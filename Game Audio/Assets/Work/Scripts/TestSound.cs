@@ -1,24 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD.Studio;
 
 public class TestSound : MonoBehaviour
 {
-    FMOD.Studio.EventInstance test_sound;
+    EventInstance Sound;
 
     void Start()
     {
-        test_sound = FMODUnity.RuntimeManager.CreateInstance("event:/Test Audio/number");
-        test_sound.setParameterByName("Parameter 1", 1.0f);
+        Sound = FMODUnity.RuntimeManager.CreateInstance("event:/Test Audio/number");
+        Sound.setParameterByName("Parameter 1", 1.0f);
     }
 
     public void PlaySound()
     {
-        FMOD.Studio.PLAYBACK_STATE PbState;
-        test_sound.getPlaybackState(out PbState);
-        if (PbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        PLAYBACK_STATE PbState;
+        Sound.getPlaybackState(out PbState);
+        if (PbState != PLAYBACK_STATE.PLAYING)
         {
-            test_sound.start();
+            Sound.start();
         }
     }
 }
