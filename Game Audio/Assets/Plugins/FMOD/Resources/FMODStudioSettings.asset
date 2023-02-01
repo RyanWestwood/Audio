@@ -442,8 +442,8 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - Ryan
-  - Test Audio
+  - Ryan Ambient
+  - Ryan Menu
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

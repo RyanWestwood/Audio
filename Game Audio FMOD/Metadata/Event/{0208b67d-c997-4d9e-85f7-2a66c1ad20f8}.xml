@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{0208b67d-c997-4d9e-85f7-2a66c1ad20f8}">
 		<property name="name">
-			<value>occlusion</value>
+			<value>Test Music</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{fffa5b0f-544d-4c8b-bab3-914400c2f7bd}</destination>
+			<destination>{bdc03ca7-e6ed-481e-a448-29fe2caf3208}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{886b9371-11dc-4685-8984-6b4701949e4f}</destination>
@@ -35,7 +35,7 @@
 			<destination>{26773f80-9fda-445e-bd10-fff518cf00b7}</destination>
 		</relationship>
 		<relationship name="banks">
-			<destination>{87e9d1f2-dd49-4ece-9beb-91f243efcc1e}</destination>
+			<destination>{061a4104-f1eb-435f-a06e-2a402890a2eb}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{886b9371-11dc-4685-8984-6b4701949e4f}">
@@ -60,7 +60,7 @@
 			<destination>{88e356af-3fa2-4b28-ac51-cdb21e74fa8c}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{b9b09b37-179e-4ee6-a53e-12791ec3edd6}</destination>
+			<destination>{9100d45b-eb16-4181-9e3f-2bbc43967b1f}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{29d9c065-cea1-49f2-ba74-0c5d592d0e7f}" />
@@ -76,9 +76,6 @@
 	<object class="Timeline" id="{00bce180-3659-4cc4-b189-7f1cace4e3e4}">
 		<relationship name="modules">
 			<destination>{dff02db2-cb47-4de8-92d2-6538ff0fe5c3}</destination>
-		</relationship>
-		<relationship name="markers">
-			<destination>{fd9cecd1-d6ce-4014-8cf8-22a6621afc69}</destination>
 		</relationship>
 	</object>
 	<object class="ParameterProxy" id="{26773f80-9fda-445e-bd10-fff518cf00b7}">
@@ -118,7 +115,7 @@
 	<object class="MixerBusPanner" id="{88e356af-3fa2-4b28-ac51-cdb21e74fa8c}" />
 	<object class="SingleSound" id="{dff02db2-cb47-4de8-92d2-6538ff0fe5c3}">
 		<property name="length">
-			<value>22.400000000000002</value>
+			<value>1.9000000000000001</value>
 		</property>
 		<property name="timelockedOffset">
 			<value>4.6000000000000005</value>
@@ -142,20 +139,6 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{eece8ed2-3df1-442a-ac0b-d0cd83eb4739}</destination>
-		</relationship>
-	</object>
-	<object class="LoopRegion" id="{fd9cecd1-d6ce-4014-8cf8-22a6621afc69}">
-		<property name="position">
-			<value>0</value>
-		</property>
-		<property name="length">
-			<value>22.400000000000002</value>
-		</property>
-		<relationship name="timeline">
-			<destination>{00bce180-3659-4cc4-b189-7f1cace4e3e4}</destination>
-		</relationship>
-		<relationship name="markerTrack">
-			<destination>{564f7aeb-f7ff-4efa-9dfd-45c5aa4d93e4}</destination>
 		</relationship>
 	</object>
 	<object class="Automator" id="{af65059b-710c-4ee5-a5cd-a71de9e8390d}">
