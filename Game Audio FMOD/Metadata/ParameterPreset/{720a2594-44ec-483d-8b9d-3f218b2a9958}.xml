@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{720a2594-44ec-483d-8b9d-3f218b2a9958}">
+		<property name="name">
+			<value>Wet Level</value>
+		</property>
+		<relationship name="folder">
+			<destination>{762e0399-50cd-42da-9836-dc08e11ba477}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{4706689f-5324-417b-8bdb-24679b6b39ce}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{4706689f-5324-417b-8bdb-24679b6b39ce}">
+		<property name="initialValue">
+			<value>0.5</value>
+		</property>
+	</object>
+</objects>
