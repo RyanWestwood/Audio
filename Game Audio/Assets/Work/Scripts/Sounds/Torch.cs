@@ -11,7 +11,7 @@ public class Torch : MonoBehaviour
     [Header("Parameters")]
 
     [SerializeField, Range(0f, 1f), Tooltip("0.f = -20dB, 1.f = 0dB")]
-    private float Volume = Random.Range(0.65f, 0.8f);
+    private float Volume = Random.Range(0.75f, 0.85f);
 
     [SerializeField, Range(0f, 1f), Tooltip("0.f = 0%, 1.f = 100%")]
     private float Feedback = Random.Range(0.0f, 0.06f);

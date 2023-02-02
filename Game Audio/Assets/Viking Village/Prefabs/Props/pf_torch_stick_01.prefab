@@ -193,7 +193,6 @@ GameObject:
   - component: {fileID: 400012}
   - component: {fileID: 11400000}
   - component: {fileID: 20500000}
-  - component: {fileID: 1595698655276311103}
   m_Layer: 10
   m_Name: pf_torch_stick_01
   m_TagString: Untagged
@@ -219,6 +218,7 @@ Transform:
   - {fileID: 491632}
   - {fileID: 426746}
   - {fileID: 459814}
+  - {fileID: 2919984392802620267}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0.426, y: -78.901, z: 2.168}
@@ -254,23 +254,6 @@ LODGroup:
     - renderer: {fileID: 2300000}
     - renderer: {fileID: 2300002}
   m_Enabled: 1
---- !u!114 &1595698655276311103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff6639572fdcc904f9cf11a0acf169d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Volume: 0
-  Feedback: 0
-  WetLevel: 0
-  DryLevel: 0
-  Gain: 0
 --- !u!1 &147432
 GameObject:
   m_ObjectHideFlags: 0
@@ -14656,3 +14639,52 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!1 &3900253578816896172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2919984392802620267}
+  - component: {fileID: 1922607090105253357}
+  m_Layer: 10
+  m_Name: sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2919984392802620267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3900253578816896172}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.394, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 400012}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1922607090105253357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3900253578816896172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6639572fdcc904f9cf11a0acf169d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Volume: 0
+  Feedback: 0
+  WetLevel: 0
+  DryLevel: 0
+  Gain: 0
