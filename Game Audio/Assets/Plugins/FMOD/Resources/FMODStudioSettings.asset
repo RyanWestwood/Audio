@@ -443,6 +443,7 @@ MonoBehaviour:
   - Master
   Banks:
   - Ryan Ambient
+  - Ryan Environment
   - Ryan Menu
   BanksToLoad: []
   LiveUpdatePort: 9264

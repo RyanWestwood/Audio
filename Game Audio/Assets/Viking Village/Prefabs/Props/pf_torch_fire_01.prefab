@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 400002}
   - component: {fileID: 11400000}
   - component: {fileID: 20500000}
-  - component: {fileID: 8750108890992760999}
   m_Layer: 10
   m_Name: pf_torch_fire_01
   m_TagString: Untagged
@@ -36,6 +35,7 @@ Transform:
   - {fileID: 484646}
   - {fileID: 495562}
   - {fileID: 435588}
+  - {fileID: 2361156112789948985}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -70,23 +70,6 @@ LODGroup:
     renderers:
     - renderer: {fileID: 2300000}
   m_Enabled: 1
---- !u!114 &8750108890992760999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff6639572fdcc904f9cf11a0acf169d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Volume: 0
-  Feedback: 0
-  WetLevel: 0
-  DryLevel: 0
-  Gain: 0
 --- !u!1 &100004
 GameObject:
   m_ObjectHideFlags: 0
@@ -14487,6 +14470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 435588}
   - component: {fileID: 10821712}
+  - component: {fileID: 7135117535104703588}
   m_Layer: 0
   m_Name: Point light 2
   m_TagString: Untagged
@@ -14571,3 +14555,72 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &7135117535104703588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1 &7508540890432303568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2361156112789948985}
+  - component: {fileID: 8346831214363999385}
+  m_Layer: 10
+  m_Name: sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2361156112789948985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7508540890432303568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.084, y: 0.2514, z: -0.115}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8346831214363999385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7508540890432303568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6639572fdcc904f9cf11a0acf169d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Volume: 0
+  Feedback: 0
+  WetLevel: 0
+  DryLevel: 0
+  Gain: 0
