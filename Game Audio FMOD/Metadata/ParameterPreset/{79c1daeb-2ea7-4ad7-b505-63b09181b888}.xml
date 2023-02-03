@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{79c1daeb-2ea7-4ad7-b505-63b09181b888}">
+		<property name="name">
+			<value>Intensity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{762e0399-50cd-42da-9836-dc08e11ba477}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{2f4cdd39-4a33-4e79-9cca-f70743c75170}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{2f4cdd39-4a33-4e79-9cca-f70743c75170}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{812ed95e-481b-4d15-8736-2b122a798270}</destination>
+		</relationship>
+	</object>
+	<object class="RandomizerModulator" id="{812ed95e-481b-4d15-8736-2b122a798270}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+	</object>
+</objects>
