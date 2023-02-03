@@ -246,6 +246,12 @@
 	</object>
 	<object class="MixerBusFader" id="{06ae0ed6-5d14-4e91-8be0-3848d0653246}" />
 	<object class="SpatialiserEffect" id="{16a03a52-bed0-4b13-9644-967f9fdda0cc}">
+		<property name="maximumDistance">
+			<value>10</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
 		<property name="stereoToSurroundUserPanMode">
 			<value>0</value>
 		</property>
