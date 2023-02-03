@@ -41,7 +41,6 @@ public class Ocean : MonoBehaviour
     {
         yield return new WaitForSeconds(Random.Range(5, 20));
         PlaySound(CrashWaves);
-        Debug.Log("CRASHJ");
         StartCoroutine(StartCrash());
     }
 }
