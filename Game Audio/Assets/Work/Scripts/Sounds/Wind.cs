@@ -25,6 +25,9 @@ public class Wind : MonoBehaviour
     [SerializeField, Tooltip("Seconds")]
     public float MaxTimeBetweenGusts = 30f;
 
+    [SerializeField, Tooltip("Wind Zone Transform")]
+    public Transform WindZoneTransform;
+
     void Start()
     {
         AmbientSound = RuntimeManager.CreateInstance("event:/Wind/Ambient");
@@ -33,6 +36,25 @@ public class Wind : MonoBehaviour
         GustSound = RuntimeManager.CreateInstance("event:/Wind/Gust");
         RandomizeParameters();
         StartCoroutine(Gust());
+    }
+
+    private void Update()
+    {
+        // Still need to shift these values between? 0-180 right, 0- -180 left.
+        WindDirection = 90 + (WindZoneTransform.rotation.eulerAngles.y - CalculateDegrees(transform.rotation.eulerAngles.y));
+        GustSound.setParameterByName("WindDirection", WindDirection);
+    }
+
+    private float CalculateDegrees(float number)
+    {
+         if (number >= 90)
+        {
+            return number - 90;
+        }
+        else
+        {
+            return 360 - (90 - number);
+        }
     }
 
     private void RandomizeParameters()
@@ -46,16 +68,8 @@ public class Wind : MonoBehaviour
         GustSound.setParameterByName("Volume", Volume);
     }
 
-    private void SetDirection()
-    {
-        // TODO: Change to in-game wind direction
-        RandomizeParameters();
-    }
-
     private void PlaySound(EventInstance Sound)
     {
-        SetDirection();
-
         PLAYBACK_STATE PbState;
         Sound.getPlaybackState(out PbState);
         if (PbState != PLAYBACK_STATE.PLAYING)
@@ -66,7 +80,7 @@ public class Wind : MonoBehaviour
 
     private IEnumerator Gust()
     {
-        yield return new WaitForSeconds(Random.Range(10, 30));
+        yield return new WaitForSeconds(Random.Range(2, 5));
         PlaySound(GustSound);
         StartCoroutine(Gust());
     }
