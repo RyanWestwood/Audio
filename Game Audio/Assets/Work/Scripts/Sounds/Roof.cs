@@ -13,7 +13,7 @@ public class Roof : MonoBehaviour
     {
         SeagulSound = RuntimeManager.CreateInstance("event:/Birds/SeagulsRoof");
         RuntimeManager.AttachInstanceToGameObject(SeagulSound, GetComponent<Transform>(), GetComponent<Rigidbody>());
-        RandomNumber = Random.Range(0f, 1f);
+        RandomNumber = 1;
         StartCoroutine(StartSeaguls());
     }
 
@@ -29,13 +29,13 @@ public class Roof : MonoBehaviour
 
     private IEnumerator StartSeaguls()
     {
-        if (RandomNumber > 0.5)
+        if (RandomNumber > 0.3)
         {
-            yield return new WaitForSeconds(Random.Range(0f, 10f));
+            yield return new WaitForSeconds(Random.Range(0f, 20f));
             RandomNumber = 0;
         }
         PlaySound(SeagulSound);
-        yield return new WaitForSeconds(Random.Range(20f, 25f));
+        yield return new WaitForSeconds(Random.Range(20f, 50f));
         StartCoroutine(StartSeaguls());
     }
 }
