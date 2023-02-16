@@ -10,6 +10,8 @@ public class Footsteps : MonoBehaviour
 
     [SerializeField]
     private CURRENT_TERRAIN CurrentTerrain;
+
+    [SerializeField]
     private EventInstance FootstepSound;
 
     void Start()
