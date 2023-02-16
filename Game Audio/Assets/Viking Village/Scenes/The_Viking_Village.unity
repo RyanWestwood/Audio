@@ -3125,43 +3125,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 84634507}
   m_PrefabAsset: {fileID: 0}
---- !u!84 &85374207
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: WaterDepthMap
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 5
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!4 &86809596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 3ccf2bc3f937d3649a1d2b0aeb03ba51,
@@ -4967,6 +4930,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 131863750}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &133826941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 133826942}
+  - component: {fileID: 133826943}
+  m_Layer: 18
+  m_Name: Mud (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &133826942
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133826941}
+  m_LocalRotation: {x: 0, y: 0.83243793, z: 0, w: 0.5541183}
+  m_LocalPosition: {x: 1.2, y: 0, z: -35.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 769643232}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 112.7, z: 0}
+--- !u!65 &133826943
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133826941}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 35.9, y: 1, z: 36.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &137764217 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400008, guid: a2ee3a78d0b205f40a3fe9f728e70ba3,
@@ -7706,6 +7714,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 222224005}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &223188840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 223188841}
+  - component: {fileID: 223188842}
+  m_Layer: 18
+  m_Name: Mud (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &223188841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223188840}
+  m_LocalRotation: {x: 0, y: -0.106784604, z: 0, w: 0.99428225}
+  m_LocalPosition: {x: 94.77, y: 0, z: -13.24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 769643232}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: -12.26, z: 0}
+--- !u!65 &223188842
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223188840}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 22.3, y: 1, z: 16.4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &223250994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14564,6 +14617,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 393781749}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &395265616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 395265617}
+  - component: {fileID: 395265618}
+  m_Layer: 18
+  m_Name: Mud (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &395265617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395265616}
+  m_LocalRotation: {x: 0, y: -0.106784604, z: 0, w: 0.99428225}
+  m_LocalPosition: {x: 104.19, y: 0, z: -38.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 769643232}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: -12.26, z: 0}
+--- !u!65 &395265618
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395265616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 32.2, y: 1, z: 21.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &397040340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21040,7 +21138,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 769643232}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -9.2, z: 0}
 --- !u!65 &544014009
 BoxCollider:
@@ -29546,7 +29644,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 769643232}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 20.597, z: 0}
 --- !u!65 &759872492
 BoxCollider:
@@ -29560,6 +29658,51 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 7.8, y: 1, z: 130.7}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &762605864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 762605865}
+  - component: {fileID: 762605866}
+  m_Layer: 18
+  m_Name: Mud (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &762605865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762605864}
+  m_LocalRotation: {x: 0, y: -0.26471472, z: 0, w: 0.9643268}
+  m_LocalPosition: {x: 112.21, y: 0, z: 22.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 769643232}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: -30.7, z: 0}
+--- !u!65 &762605866
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762605864}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13, y: 1, z: 23.09}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &763376594
 PrefabInstance:
@@ -29963,14 +30106,21 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1152213410}
-  - {fileID: 2102965418}
   - {fileID: 759872491}
   - {fileID: 544014008}
   - {fileID: 2114106684}
   - {fileID: 2030203455}
   - {fileID: 2088647355}
   - {fileID: 1402057785}
+  - {fileID: 864650602}
+  - {fileID: 1591338277}
+  - {fileID: 762605865}
+  - {fileID: 223188841}
+  - {fileID: 395265617}
+  - {fileID: 1583720302}
+  - {fileID: 1244485256}
+  - {fileID: 780569555}
+  - {fileID: 133826942}
   m_Father: {fileID: 468818263}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30814,6 +30964,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b778e047b17a6124b961ae45e03ee63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &780569554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 780569555}
+  - component: {fileID: 780569556}
+  m_Layer: 18
+  m_Name: Mud (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &780569555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780569554}
+  m_LocalRotation: {x: 0, y: 0.83243793, z: 0, w: 0.5541183}
+  m_LocalPosition: {x: 18.1, y: 0, z: -4.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 769643232}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 112.7, z: 0}
+--- !u!65 &780569556
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780569554}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.9, y: 1, z: 28.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &782463353 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4829004042300518, guid: 215a971f0f2e59047bf9b5991ec49964,
@@ -34549,6 +34744,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 863666047}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &864650601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 864650602}
+  - component: {fileID: 864650603}
+  m_Layer: 18
+  m_Name: Mud (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &864650602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864650601}
+  m_LocalRotation: {x: 0, y: -0.106784604, z: 0, w: 0.99428225}
+  m_LocalPosition: {x: 85.08, y: 0, z: 15.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 769643232}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: -12.26, z: 0}
+--- !u!65 &864650603
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864650601}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.18, y: 1, z: 29.7}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &865637651
 GameObject:
   m_ObjectHideFlags: 0
@@ -45549,51 +45789,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1147972922}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1152213409
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1152213410}
-  - component: {fileID: 1152213411}
-  m_Layer: 18
-  m_Name: Mud
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1152213410
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152213409}
-  m_LocalRotation: {x: 0, y: 0.17785764, z: 0, w: 0.98405623}
-  m_LocalPosition: {x: -6, y: 0, z: 8.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 769643232}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 20.49, z: 0}
---- !u!65 &1152213411
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152213409}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 81.3, y: 1, z: 123.9}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1155578971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49552,6 +49747,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 820014808}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1244485255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1244485256}
+  - component: {fileID: 1244485257}
+  m_Layer: 18
+  m_Name: Mud (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1244485256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244485255}
+  m_LocalRotation: {x: 0, y: 0.83243793, z: 0, w: 0.5541183}
+  m_LocalPosition: {x: 30.6, y: 0, z: 25.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 769643232}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 112.7, z: 0}
+--- !u!65 &1244485257
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244485255}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40.9, y: 1, z: 25.3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1244541327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53742,6 +53982,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1382165365}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1386128039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1386128040}
+  - component: {fileID: 1386128041}
+  m_Layer: 17
+  m_Name: Wood (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1386128040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386128039}
+  m_LocalRotation: {x: 0, y: 0.508816, z: 0, w: 0.8608753}
+  m_LocalPosition: {x: 106.61, y: 0, z: 18.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1464415507}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 61.17, z: 0}
+--- !u!65 &1386128041
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386128039}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 2.61, z: 1.35}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1388105999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54543,7 +54828,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 769643232}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 4.1, z: 0}
 --- !u!65 &1402057786
 BoxCollider:
@@ -57496,6 +57781,7 @@ Transform:
   - {fileID: 934782194}
   - {fileID: 920380946}
   - {fileID: 1689841440}
+  - {fileID: 1386128040}
   m_Father: {fileID: 468818263}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -61167,6 +61453,43 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1558924984}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &1559065837
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterDepthMap
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1001 &1559546258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62195,6 +62518,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1582617150}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1583720301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1583720302}
+  - component: {fileID: 1583720303}
+  m_Layer: 18
+  m_Name: Mud (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1583720302
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583720301}
+  m_LocalRotation: {x: 0, y: 0.8741963, z: 0, w: 0.48557273}
+  m_LocalPosition: {x: -13.5, y: 0, z: 23}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 769643232}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 121.9, z: 0}
+--- !u!65 &1583720303
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583720301}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 103.2, y: 1, z: 54.9}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1584466664 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1650942096471433627, guid: d1815a87ce08fec4a946a23dda29aadb,
@@ -62307,6 +62675,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1586548461}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1591338276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1591338277}
+  - component: {fileID: 1591338278}
+  m_Layer: 18
+  m_Name: Mud (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1591338277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591338276}
+  m_LocalRotation: {x: 0, y: -0.26471472, z: 0, w: 0.9643268}
+  m_LocalPosition: {x: 101.28, y: 0, z: 16.42}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 769643232}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: -30.7, z: 0}
+--- !u!65 &1591338278
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591338276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.4, y: 1, z: 23.09}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1593230440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77648,7 +78061,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 769643232}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 4.1, z: 0}
 --- !u!65 &2030203456
 BoxCollider:
@@ -80006,7 +80419,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 769643232}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 4.1, z: 0}
 --- !u!65 &2088647356
 BoxCollider:
@@ -80949,51 +81362,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2102788804}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2102965417
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2102965418}
-  - component: {fileID: 2102965419}
-  m_Layer: 18
-  m_Name: Mud (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2102965418
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2102965417}
-  m_LocalRotation: {x: 0, y: -0.08045985, z: 0, w: 0.99675786}
-  m_LocalPosition: {x: 121.7, y: 0, z: 4.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 769643232}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -9.23, z: 0}
---- !u!65 &2102965419
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2102965417}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 81.3, y: 1, z: 130.7}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2104201086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81725,7 +82093,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 769643232}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 4.1, z: 0}
 --- !u!65 &2114106685
 BoxCollider:
