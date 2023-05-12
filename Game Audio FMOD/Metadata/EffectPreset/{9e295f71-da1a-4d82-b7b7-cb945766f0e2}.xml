@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EffectPreset" id="{9e295f71-da1a-4d82-b7b7-cb945766f0e2}">
+		<property name="name">
+			<value>Effect Chain</value>
+		</property>
+		<relationship name="folder">
+			<destination>{87cff1ca-354c-48ad-9bdb-e179cf1869e4}</destination>
+		</relationship>
+		<relationship name="effect">
+			<destination>{b800ba9c-df11-4954-a5b0-65c572783779}</destination>
+		</relationship>
+	</object>
+	<object class="EffectChain" id="{b800ba9c-df11-4954-a5b0-65c572783779}">
+		<relationship name="effects">
+			<destination>{f74ef231-a55b-4cb2-a047-0e01669342eb}</destination>
+		</relationship>
+	</object>
+	<object class="ThreeEQEffect" id="{f74ef231-a55b-4cb2-a047-0e01669342eb}">
+		<property name="lowGain">
+			<value>-17</value>
+		</property>
+	</object>
+</objects>

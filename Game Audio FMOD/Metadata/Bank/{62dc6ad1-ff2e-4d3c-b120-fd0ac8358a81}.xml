@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="Bank" id="{62dc6ad1-ff2e-4d3c-b120-fd0ac8358a81}">
+		<property name="name">
+			<value>hakeem voice lines</value>
+		</property>
+		<relationship name="folder">
+			<destination>{979586fa-3bae-4f1f-b0b0-6ba657bdfbdb}</destination>
+		</relationship>
+	</object>
+</objects>
