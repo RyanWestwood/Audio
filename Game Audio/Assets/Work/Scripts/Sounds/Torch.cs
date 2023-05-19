@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using FMODUnity;
 using FMOD.Studio;
+using FMODUnity;
+using System.Collections;
+using UnityEngine;
 
 public class Torch : MonoBehaviour
 {
@@ -11,19 +10,19 @@ public class Torch : MonoBehaviour
     [Header("Parameters")]
 
     [SerializeField, Range(0f, 1f), Tooltip("0.f = -20dB, 1.f = 0dB")]
-    private float Volume = Random.Range(0.55f, 0.65f);
+    private float Volume;
 
     [SerializeField, Range(0f, 1f), Tooltip("0.f = 0%, 1.f = 100%")]
-    private float Feedback = Random.Range(0.0f, 0.06f);
+    private float Feedback;
 
     [SerializeField, Range(0f, 1f), Tooltip("0.f = -2dB, 1.f = 2dB")]
-    private float WetLevel = Random.Range(0f, 1f);
+    private float WetLevel;
 
     [SerializeField, Range(0f, 1f), Tooltip("0.f = -2dB, 1.f = 2dB")]
-    private float DryLevel = Random.Range(0f, 0f);
+    private float DryLevel;
 
     [SerializeField, Range(0f, 1f), Tooltip("0.f = -3dB, 1.f = 3dB")]
-    private float Gain = Random.Range(0f, 1f);
+    private float Gain;
 
     void Start()
     {
@@ -38,19 +37,18 @@ public class Torch : MonoBehaviour
         StartCoroutine(StartSound());
     }
 
-    private void PlaySound(EventInstance Sound)
+    private void RandomizeTorch()
     {
-        PLAYBACK_STATE PbState;
-        Sound.getPlaybackState(out PbState);
-        if (PbState != PLAYBACK_STATE.PLAYING)
-        {
-            Sound.start();
-        }
+        Volume = Random.Range(0.55f, 0.65f);
+        Feedback = Random.Range(0.0f, 0.06f);
+        WetLevel = Random.Range(0f, 1f);
+        DryLevel = Random.Range(0f, 0f);
+        Gain = Random.Range(0f, 1f);
     }
 
     private IEnumerator StartSound()
     {
         yield return new WaitForSeconds(Random.Range(0f, 0.5f));
-        PlaySound(CracklingSound);
+        SoundManager.PlaySound(CracklingSound);
     }
 }

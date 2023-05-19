@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using FMODUnity;
 using FMOD.Studio;
+using FMODUnity;
+using UnityEngine;
 
 public class Footsteps : MonoBehaviour
 {
@@ -18,7 +16,7 @@ public class Footsteps : MonoBehaviour
     {
         FootstepSound = RuntimeManager.CreateInstance("event:/Footsteps/Footsteps");
         RuntimeManager.AttachInstanceToGameObject(FootstepSound, GetComponent<Transform>(), GetComponent<Rigidbody>());
-        PlaySound(FootstepSound);
+        SoundManager.PlaySound(FootstepSound);
     }
 
     private void Update()
@@ -41,11 +39,11 @@ public class Footsteps : MonoBehaviour
         }
     }
 
-    private bool CheckLayer(RaycastHit hit,string layer, CURRENT_TERRAIN terrain)
+    private bool CheckLayer(RaycastHit hit, string layer, CURRENT_TERRAIN terrain)
     {
         if (hit.transform.gameObject.layer == LayerMask.NameToLayer(layer))
         {
-            if(CurrentTerrain != terrain) PlayFootstep(terrain);
+            if (CurrentTerrain != terrain) PlayFootstep(terrain);
             CurrentTerrain = terrain;
             return true;
         }
@@ -55,15 +53,5 @@ public class Footsteps : MonoBehaviour
     private void PlayFootstep(CURRENT_TERRAIN terrain)
     {
         FootstepSound.setParameterByName("Terrain", (int)terrain);
-    }
-
-    private void PlaySound(EventInstance Sound)
-    {
-        PLAYBACK_STATE PbState;
-        Sound.getPlaybackState(out PbState);
-        if (PbState != PLAYBACK_STATE.PLAYING)
-        {
-            Sound.start();
-        }
     }
 }

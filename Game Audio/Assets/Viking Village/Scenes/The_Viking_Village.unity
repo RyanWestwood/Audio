@@ -17645,7 +17645,7 @@ Transform:
   - {fileID: 1464415507}
   - {fileID: 769643232}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &470542063
 PrefabInstance:
@@ -36750,67 +36750,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1205677948}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &928206508
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 928206510}
-  - component: {fileID: 928206509}
-  m_Layer: 0
-  m_Name: Bird System
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &928206509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928206508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35acec13e92dc0846a893a2496fea9f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idealNumberOfBirds: 30
-  maximumNumberOfBirds: 50
-  currentCamera: {fileID: 1003008733}
-  unspawnDistance: 2000
-  highQuality: 1
-  collideWithObjects: 1
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 65536
-  birdScale: 1
-  robin: 0
-  blueJay: 0
-  cardinal: 0
-  chickadee: 1
-  sparrow: 1
-  goldFinch: 0
-  crow: 1
---- !u!4 &928206510
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928206508}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.829044, y: 3.721531, z: 9.065054}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &928565245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39962,12 +39901,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22c8db18fdbed734a8709dd4ec787d0e, type: 3}
---- !u!20 &1003008733 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 2058656, guid: 22c8db18fdbed734a8709dd4ec787d0e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1003008732}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1005419851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63183,6 +63116,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6bbb3230e1a45e4aa718394dfbd3d34, type: 3}
+--- !u!84 &1605281959
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterDepthMap
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1001 &1605307234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67866,7 +67836,6 @@ GameObject:
   - component: {fileID: 1751713975}
   - component: {fileID: 1751713974}
   - component: {fileID: 1751713973}
-  - component: {fileID: 1751713976}
   m_Layer: 5
   m_Name: Master Sound Btn
   m_TagString: Untagged
@@ -68001,19 +67970,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751713970}
   m_CullTransparentMesh: 1
---- !u!114 &1751713976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1751713970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1e5ebafb9ecf084da830f9234d59eea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EventName: 
 --- !u!1001 &1751929122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68457,7 +68413,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763871027}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
