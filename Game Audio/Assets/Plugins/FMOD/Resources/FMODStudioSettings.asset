@@ -443,10 +443,10 @@ MonoBehaviour:
   - Master
   Banks:
   - hakeem voice lines
+  - Music
   - Ryan Ambient
   - Ryan Environment
   - Ryan Menu
-  - Ryan Music
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
