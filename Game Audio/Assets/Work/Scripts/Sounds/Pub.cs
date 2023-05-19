@@ -12,6 +12,6 @@ public class Pub : MonoBehaviour
         PubAmbience = RuntimeManager.CreateInstance("event:/Pub");
         RuntimeManager.AttachInstanceToGameObject(PubAmbience, GetComponent<Transform>(), GetComponent<Rigidbody>());
         SoundManager.PlaySound(PubAmbience);
-        PubAmbience.setParameterByName("Occlusion", 0.6f);
+        PubAmbience.setParameterByName("Occlusion", .5f);
     }
 }
