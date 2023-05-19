@@ -5,7 +5,7 @@ using UnityEngine;
 public class Footsteps : MonoBehaviour
 {
     private enum CURRENT_TERRAIN { WOOD, GRASS, STONE, SAND, MUD }; // Math these to FMOD order
-
+    public Rigidbody PlayerRigidbody;
     [SerializeField]
     private CURRENT_TERRAIN CurrentTerrain;
 
@@ -21,6 +21,8 @@ public class Footsteps : MonoBehaviour
 
     private void Update()
     {
+        float volume = PlayerRigidbody.velocity.magnitude > 0.1f ? 1.0f : 0.0f;
+        FootstepSound.setParameterByName("Volume", volume);
         DetermineTerrain();
     }
 
