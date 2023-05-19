@@ -21,8 +21,11 @@ public class Footsteps : MonoBehaviour
 
     private void Update()
     {
+        float speed = PlayerRigidbody.velocity.magnitude > 10f ? 1.0f : 0.0f;
+        FootstepSound.setParameterByName("Pitch", speed);
         float volume = PlayerRigidbody.velocity.magnitude > 0.1f ? 1.0f : 0.0f;
         FootstepSound.setParameterByName("Volume", volume);
+
         DetermineTerrain();
     }
 

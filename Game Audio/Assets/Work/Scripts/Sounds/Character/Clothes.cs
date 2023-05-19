@@ -17,6 +17,7 @@ public class Clothes : MonoBehaviour
     private void Update()
     {
         float volume = PlayerRigidbody.velocity.magnitude > 0.1f ? 1.0f : 0.0f;
+        Debug.Log(PlayerRigidbody.velocity.magnitude);
         ClothesTrack.setParameterByName("Volume", volume);
     }
 }
