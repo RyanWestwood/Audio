@@ -28,6 +28,9 @@ public class Footsteps : MonoBehaviour
 
         JumpingSound = RuntimeManager.CreateInstance("event:/Jumping/Jump");
         RuntimeManager.AttachInstanceToGameObject(JumpingSound, GetComponent<Transform>(), GetComponent<Rigidbody>());
+
+        LandingSound = RuntimeManager.CreateInstance("event:/Jumping/Landing");
+        RuntimeManager.AttachInstanceToGameObject(LandingSound, GetComponent<Transform>(), GetComponent<Rigidbody>());
     }
 
     private void Update()
@@ -82,8 +85,11 @@ public class Footsteps : MonoBehaviour
     private IEnumerator JumpSequence()
     {
         JumpingSound.set3DAttributes(RuntimeUtils.To3DAttributes(transform.position));
+        LandingSound.set3DAttributes(RuntimeUtils.To3DAttributes(transform.position));
+        LandingSound.setParameterByName("Terrain", (int)CurrentTerrain);
+        Debug.Log(CurrentTerrain);
         SoundManager.PlaySound(JumpingSound);
         yield return new WaitForSeconds(1.1f);
-        //SoundManager.PlaySound(Jump);
+        SoundManager.PlaySound(LandingSound);
     }
 }
