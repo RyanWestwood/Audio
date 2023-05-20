@@ -1,5 +1,6 @@
 using FMOD.Studio;
 using FMODUnity;
+using System.Collections;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 
@@ -13,6 +14,8 @@ public class Footsteps : MonoBehaviour
 
     [SerializeField]
     private EventInstance FootstepSound;
+    private bool WasGrounded = true;
+    private bool IsJumping = false;
 
     void Start()
     {
@@ -31,6 +34,11 @@ public class Footsteps : MonoBehaviour
         FootstepSound.setParameterByName("Pitch", speed);
         float volume = is_moving && is_grounded ? 1.0f : 0.0f;
         FootstepSound.setParameterByName("Volume", volume);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StartCoroutine(JumpSequence());
+        }
 
         DetermineTerrain();
     }
@@ -64,5 +72,11 @@ public class Footsteps : MonoBehaviour
     private void PlayFootstep(CURRENT_TERRAIN terrain)
     {
         FootstepSound.setParameterByName("Terrain", (int)terrain);
+    }
+    private IEnumerator JumpSequence()
+    {
+        //SoundManager.PlaySound(Jump);
+        yield return new WaitForSeconds(1.1f);
+        Debug.Log("Landed!");
     }
 }
