@@ -81,6 +81,7 @@ public class Footsteps : MonoBehaviour
     }
     private IEnumerator JumpSequence()
     {
+        JumpingSound.set3DAttributes(RuntimeUtils.To3DAttributes(transform.position));
         SoundManager.PlaySound(JumpingSound);
         yield return new WaitForSeconds(1.1f);
         //SoundManager.PlaySound(Jump);
