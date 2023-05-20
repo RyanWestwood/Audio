@@ -1,11 +1,13 @@
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class Footsteps : MonoBehaviour
 {
     private enum CURRENT_TERRAIN { WOOD, GRASS, STONE, SAND, MUD }; // Math these to FMOD order
     public Rigidbody PlayerRigidbody;
+    public RigidbodyFirstPersonController PlayerController;
     [SerializeField]
     private CURRENT_TERRAIN CurrentTerrain;
 
@@ -21,9 +23,13 @@ public class Footsteps : MonoBehaviour
 
     private void Update()
     {
-        float speed = PlayerRigidbody.velocity.magnitude > 10f ? 1.0f : 0.0f;
+        bool is_grounded = PlayerController.Grounded;
+        bool is_moving = PlayerRigidbody.velocity.magnitude > 0.1f;
+        bool is_sprinting = PlayerRigidbody.velocity.magnitude > 10f;
+
+        float speed = is_sprinting ? 1.0f : 0.0f;
         FootstepSound.setParameterByName("Pitch", speed);
-        float volume = PlayerRigidbody.velocity.magnitude > 0.1f ? 1.0f : 0.0f;
+        float volume = is_moving && is_grounded ? 1.0f : 0.0f;
         FootstepSound.setParameterByName("Volume", volume);
 
         DetermineTerrain();
