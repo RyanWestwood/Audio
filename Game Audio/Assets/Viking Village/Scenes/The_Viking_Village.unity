@@ -23112,6 +23112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerRigidbody: {fileID: 1763871041}
+  PlayerController: {fileID: 1763871037}
   CurrentTerrain: 0
 --- !u!4 &597332384 stripped
 Transform:
@@ -50543,6 +50544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1262548623}
   - component: {fileID: 1262548624}
+  - component: {fileID: 1262548625}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -50578,6 +50580,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Frequency: 0
+--- !u!114 &1262548625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262548622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a7537635b4678438945bda49497b93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1264626119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53247,6 +53261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1349056319}
   - component: {fileID: 1349056320}
+  - component: {fileID: 1349056321}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -53282,6 +53297,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Frequency: 1
+--- !u!114 &1349056321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349056318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a7537635b4678438945bda49497b93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1351863050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68608,6 +68635,18 @@ MonoBehaviour:
   OverrideAttenuation: 1
   OverrideMinDistance: 5
   OverrideMaxDistance: 20
+--- !u!114 &1763871037 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11493084, guid: 5f29f207d858fd245b7befaa18ea3284,
+    type: 3}
+  m_PrefabInstance: {fileID: 2482109}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763871027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c9795a96c094f4cbde4d65546aa9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &1763871041 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 5463966, guid: 5f29f207d858fd245b7befaa18ea3284,
@@ -68749,6 +68788,43 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1772861774}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &1773126841
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterDepthMap
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1001 &1773385857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76706,43 +76782,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1995259102}
   m_PrefabAsset: {fileID: 0}
---- !u!84 &1998050198
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: WaterDepthMap
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 5
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1001 &1999545644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77402,6 +77441,7 @@ GameObject:
   - component: {fileID: 2009057593}
   - component: {fileID: 2009057594}
   - component: {fileID: 2009057595}
+  - component: {fileID: 2009057596}
   m_Layer: 0
   m_Name: Cauldron
   m_TagString: Untagged
@@ -77449,6 +77489,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Frequency: 2
+--- !u!114 &2009057596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009057592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a7537635b4678438945bda49497b93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2009196220
 PrefabInstance:
   m_ObjectHideFlags: 0
