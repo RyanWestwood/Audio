@@ -7,21 +7,27 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class Footsteps : MonoBehaviour
 {
     private enum CURRENT_TERRAIN { WOOD, GRASS, STONE, SAND, MUD }; // Math these to FMOD order
-    public Rigidbody PlayerRigidbody;
-    public RigidbodyFirstPersonController PlayerController;
     [SerializeField]
     private CURRENT_TERRAIN CurrentTerrain;
 
-    [SerializeField]
-    private EventInstance FootstepSound;
+    public Rigidbody PlayerRigidbody;
+    public RigidbodyFirstPersonController PlayerController;
     private bool WasGrounded = true;
     private bool IsJumping = false;
+
+    [SerializeField]
+    private EventInstance FootstepSound;
+    private EventInstance JumpingSound;
+    private EventInstance LandingSound;
 
     void Start()
     {
         FootstepSound = RuntimeManager.CreateInstance("event:/Footsteps/Footsteps");
         RuntimeManager.AttachInstanceToGameObject(FootstepSound, GetComponent<Transform>(), GetComponent<Rigidbody>());
         SoundManager.PlaySound(FootstepSound);
+
+        JumpingSound = RuntimeManager.CreateInstance("event:/Jumping/Jump");
+        RuntimeManager.AttachInstanceToGameObject(JumpingSound, GetComponent<Transform>(), GetComponent<Rigidbody>());
     }
 
     private void Update()
@@ -75,8 +81,8 @@ public class Footsteps : MonoBehaviour
     }
     private IEnumerator JumpSequence()
     {
-        //SoundManager.PlaySound(Jump);
+        SoundManager.PlaySound(JumpingSound);
         yield return new WaitForSeconds(1.1f);
-        Debug.Log("Landed!");
+        //SoundManager.PlaySound(Jump);
     }
 }
