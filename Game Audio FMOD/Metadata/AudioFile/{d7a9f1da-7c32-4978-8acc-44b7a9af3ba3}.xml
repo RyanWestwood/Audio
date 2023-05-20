@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{d7a9f1da-7c32-4978-8acc-44b7a9af3ba3}">
 		<property name="assetPath">
-			<value>217206__13henand__bubbles-fast.wav</value>
+			<value>Kitchen/217206__13henand__bubbles-fast.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

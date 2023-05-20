@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{2a52c050-bd0d-4743-b7e6-15362d653505}">
 		<property name="assetPath">
-			<value>682869__drewsimko__cloth_noise.wav</value>
+			<value>Character/682869__drewsimko__cloth_noise.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
