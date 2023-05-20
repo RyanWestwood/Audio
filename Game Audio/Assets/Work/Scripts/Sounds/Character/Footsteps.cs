@@ -87,7 +87,6 @@ public class Footsteps : MonoBehaviour
         JumpingSound.set3DAttributes(RuntimeUtils.To3DAttributes(transform.position));
         LandingSound.set3DAttributes(RuntimeUtils.To3DAttributes(transform.position));
         LandingSound.setParameterByName("Terrain", (int)CurrentTerrain);
-        Debug.Log(CurrentTerrain);
         SoundManager.PlaySound(JumpingSound);
         yield return new WaitForSeconds(1.1f);
         SoundManager.PlaySound(LandingSound);

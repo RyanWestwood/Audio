@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ButtonFunctions : MonoBehaviour
@@ -9,7 +7,6 @@ public class ButtonFunctions : MonoBehaviour
 
     public void Continue()
     {
-        Debug.Log("Continue Clicked!\n");
         camera_script.Toggle();
         menu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
