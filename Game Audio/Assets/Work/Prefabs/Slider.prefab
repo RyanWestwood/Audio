@@ -75,8 +75,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -93,13 +93,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -347,6 +347,7 @@ GameObject:
   - component: {fileID: 3532839426691412646}
   - component: {fileID: 7565468609211728174}
   - component: {fileID: 4580262636229458742}
+  - component: {fileID: 2468529829076249356}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -434,9 +435,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6b81ed91bca4f439136b55d48270f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyname: default
   title: {fileID: 7565468608186585291}
+  audio_bus_id: 
   slider: {fileID: 7565468609095005145}
+  keyname: default
+--- !u!222 &2468529829076249356
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7565468609211728172}
+  m_CullTransparentMesh: 1
 --- !u!1 &7565468609375587672
 GameObject:
   m_ObjectHideFlags: 0
