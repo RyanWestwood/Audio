@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using FMODUnity;
 using FMOD.Studio;
+using FMODUnity;
+using System.Collections;
+using UnityEngine;
 
 public class Roof : MonoBehaviour
 {
@@ -17,16 +16,6 @@ public class Roof : MonoBehaviour
         StartCoroutine(StartSeaguls());
     }
 
-    private void PlaySound(EventInstance Sound)
-    {
-        PLAYBACK_STATE PbState;
-        Sound.getPlaybackState(out PbState);
-        if (PbState != PLAYBACK_STATE.PLAYING)
-        {
-            Sound.start();
-        }
-    }
-
     private IEnumerator StartSeaguls()
     {
         if (RandomNumber > 0.3)
@@ -34,7 +23,7 @@ public class Roof : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(0f, 20f));
             RandomNumber = 0;
         }
-        PlaySound(SeagulSound);
+        SoundManager.PlaySound(SeagulSound);
         yield return new WaitForSeconds(Random.Range(20f, 50f));
         StartCoroutine(StartSeaguls());
     }

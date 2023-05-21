@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{2a52c050-bd0d-4743-b7e6-15362d653505}">
+		<property name="assetPath">
+			<value>Character/682869__drewsimko__cloth_noise.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.5833333333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8354e7ce-d72e-419f-a828-b62749a1431b}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using FMODUnity;
 using FMOD.Studio;
+using FMODUnity;
+using UnityEngine;
 
 public class AudioOcclusion : MonoBehaviour
 {
@@ -57,7 +55,6 @@ public class AudioOcclusion : MonoBehaviour
 
         LineCastHitCount = 0f;
     }
-
     private void OccludeBetween(Vector3 sound, Vector3 listener)
     {
         Vector3 SoundLeft = CalculatePoint(sound, listener, SoundOcclusionWidening, 1);
@@ -88,7 +85,6 @@ public class AudioOcclusion : MonoBehaviour
         CheckRay(SoundBelow, ListenerBelow);
         SetOcclusion();
     }
-
     private Vector3 CalculatePoint(Vector3 a, Vector3 b, float m, int positive_or_negative)
     {
         float x, z;
@@ -100,7 +96,6 @@ public class AudioOcclusion : MonoBehaviour
 
         return new Vector3(x, a.y, z);
     }
-
     private void CheckRay(Vector3 Start, Vector3 End)
     {
         RaycastHit hit;
@@ -109,7 +104,6 @@ public class AudioOcclusion : MonoBehaviour
         if (hit.collider)
             LineCastHitCount++;
     }
-
     private void SetOcclusion()
     {
         var OcclusionModifier = (LineCastHitCount / 11) * MuffleMultiplier;

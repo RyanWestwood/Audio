@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{7e7d4002-e568-4c35-82fb-8bc9d31c6d8a}">
+		<property name="assetPath">
+			<value>Textiles/477179__vman533__old-loom-andes-peru.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>20.821333333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8354e7ce-d72e-419f-a828-b62749a1431b}</destination>
+		</relationship>
+	</object>
+</objects>

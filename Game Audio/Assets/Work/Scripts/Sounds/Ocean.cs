@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using FMODUnity;
 using FMOD.Studio;
+using FMODUnity;
+using System.Collections;
+using UnityEngine;
 
 public class Ocean : MonoBehaviour
 {
@@ -21,26 +20,16 @@ public class Ocean : MonoBehaviour
         StartCoroutine(StartCrash());
     }
 
-    private void PlaySound(EventInstance Sound)
-    {
-        PLAYBACK_STATE PbState;
-        Sound.getPlaybackState(out PbState);
-        if (PbState != PLAYBACK_STATE.PLAYING)
-        {
-            Sound.start();
-        }
-    }
-
     private IEnumerator StartAmbient()
     {
         yield return new WaitForSeconds(Random.Range(0f, 0.5f));
-        PlaySound(AmbientWaves);
+        SoundManager.PlaySound(AmbientWaves);
     }
 
     private IEnumerator StartCrash()
     {
         yield return new WaitForSeconds(Random.Range(5, 20));
-        PlaySound(CrashWaves);
+        SoundManager.PlaySound(CrashWaves);
         StartCoroutine(StartCrash());
     }
 }

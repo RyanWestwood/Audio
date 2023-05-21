@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{c48569af-3e07-4157-8d60-7884e4a9002e}">
+		<property name="assetPath">
+			<value>CreakyFloor/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8354e7ce-d72e-419f-a828-b62749a1431b}</destination>
+		</relationship>
+	</object>
+</objects>

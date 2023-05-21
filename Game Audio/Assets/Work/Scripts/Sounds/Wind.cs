@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using FMODUnity;
 using FMOD.Studio;
+using FMODUnity;
+using System.Collections;
+using UnityEngine;
 
 public class Wind : MonoBehaviour
 {
@@ -31,7 +30,7 @@ public class Wind : MonoBehaviour
     void Start()
     {
         AmbientSound = RuntimeManager.CreateInstance("event:/Wind/Ambient");
-        PlaySound(AmbientSound);
+        SoundManager.PlaySound(AmbientSound);
 
         GustSound = RuntimeManager.CreateInstance("event:/Wind/Gust");
         RandomizeParameters();
@@ -47,7 +46,7 @@ public class Wind : MonoBehaviour
 
     private float CalculateDegrees(float number)
     {
-         if (number >= 90)
+        if (number >= 90)
         {
             return number - 90;
         }
@@ -68,20 +67,10 @@ public class Wind : MonoBehaviour
         GustSound.setParameterByName("Volume", Volume);
     }
 
-    private void PlaySound(EventInstance Sound)
-    {
-        PLAYBACK_STATE PbState;
-        Sound.getPlaybackState(out PbState);
-        if (PbState != PLAYBACK_STATE.PLAYING)
-        {
-            Sound.start();
-        }
-    }
-
     private IEnumerator Gust()
     {
         yield return new WaitForSeconds(Random.Range(2, 5));
-        PlaySound(GustSound);
+        SoundManager.PlaySound(GustSound);
         StartCoroutine(Gust());
     }
 }
