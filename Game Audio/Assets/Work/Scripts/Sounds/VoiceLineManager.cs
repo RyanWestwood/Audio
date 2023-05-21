@@ -5,10 +5,10 @@ public static class VoiceLineManager
     private static bool IsBusPlaying()
     {
         var bus = FMODUnity.RuntimeManager.GetBus("bus:/Sound Effect Bus/Voices");
-        bool isPlaying = false;
-        bus.getPaused(out isPlaying);
-
-        return isPlaying;
+        float volume;
+        bus.getVolume(out volume);
+        float volumeThreshold = 1f;
+        return volume > volumeThreshold;
     }
     public static void AttemptVoiceLine(EventInstance sound)
     {
