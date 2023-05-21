@@ -7,6 +7,7 @@ public class TriggerSound : MonoBehaviour
     [SerializeField]
     private EventInstance TriggerTrack;
     public string AudioEventID;
+
     public int Cooldown;
     private float Timer = 1000;
 
@@ -25,7 +26,7 @@ public class TriggerSound : MonoBehaviour
     {
         if (Timer >= Cooldown)
         {
-            SoundManager.PlaySound(TriggerTrack);
+            VoiceLineManager.AttemptVoiceLine(TriggerTrack);
         }
     }
 }
