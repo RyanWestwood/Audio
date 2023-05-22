@@ -27,6 +27,7 @@ public class TriggerSound : MonoBehaviour
         if (Timer >= Cooldown)
         {
             VoiceLineManager.AttemptVoiceLine(TriggerTrack);
+            Timer = 0;
         }
     }
 }

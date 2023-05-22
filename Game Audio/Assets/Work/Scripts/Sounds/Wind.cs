@@ -39,7 +39,6 @@ public class Wind : MonoBehaviour
 
     private void Update()
     {
-        // Still need to shift these values between? 0-180 right, 0- -180 left.
         WindDirection = 90 + (WindZoneTransform.rotation.eulerAngles.y - CalculateDegrees(transform.rotation.eulerAngles.y));
         GustSound.setParameterByName("WindDirection", WindDirection);
     }
